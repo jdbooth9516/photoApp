@@ -1,0 +1,23 @@
+{
+  "name": "photoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdbooth9516/photoApp.git"
+  },
+  "author": "Jeremiah Booth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdbooth9516/photoApp/issues"
+  },
+  "homepage": "https://github.com/jdbooth9516/photoApp#readme",
+  "devDependencies": {
+    "electron": "^15.0.0",
+    "nodemon": "^2.0.13"
+  }
+}

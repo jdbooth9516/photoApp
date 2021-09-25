@@ -1,0 +1,114 @@
+$primaryColor: #333;
+$secondaryColor: aliceblue;
+$defualtMargin: 0.5em;
+$submitColor: rgb(0, 189, 72);
+$importColor: rgb(1, 113, 241);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}
+
+.import {
+  max-width: 10vw;
+  margin: $defualtMargin;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image {
+  &-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+  &-item {
+    margin: $defualtMargin;
+  }
+}
+
+.form {
+  &-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: $defualtMargin;
+    margin-right: 5vw;
+    max-width: 30vw;
+  }
+  &-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: $defualtMargin;
+  }
+  &-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: $defualtMargin;
+  }
+}
+.button {
+  border: 1px solid $importColor;
+  border-radius: 3px;
+  cursor: default;
+  color: $importColor;
+  height: 2.2em;
+  width: 10vw;
+  padding-top: 0.8vh;
+
+  &-input {
+    opacity: 1;
+    size: 5vh;
+  }
+
+  &-submit {
+    border: 1px solid $submitColor;
+    border-radius: 3px;
+    color: 1px solid $submitColor;
+    background-color: $primaryColor;
+    color: $submitColor;
+    height: 1.8em;
+    width: 7vw;
+    margin: $defualtMargin;
+  }
+  &-print {
+    border: 1px solid $importColor;
+    border-radius: 3px;
+    color: 1px solid $importColor;
+    background-color: $primaryColor;
+    color: $importColor;
+    height: 1.8em;
+    width: 7vw;
+    margin: $defualtMargin;
+  }
+  &-digital {
+    border: 1px solid $submitColor;
+    border-radius: 3px;
+    color: 1px solid $submitColor;
+    background-color: $primaryColor;
+    color: $submitColor;
+    height: 1.8em;
+    width: 7vw;
+    margin: $defualtMargin;
+  }
+}
